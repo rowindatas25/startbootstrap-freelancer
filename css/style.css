@@ -2,6 +2,10 @@ body {
   font-family: 'Lato';
 }
 
+a#mail {
+  color:white;
+}
+
 h1,
 h2,
 h3,
@@ -21,9 +25,80 @@ img#opening {
   border-radius: 50px;
 }
 
-img#resume, img#music_pic {
+img#resume {
+  border-radius: 10px;
+  height: 650px;
+  max-width: 100%;
+}
+
+img#music_pic {
+  border-radius: 10px;
+  height: auto;
+  max-width: 100%;
+}
+
+img#R {
+  height: auto;
+  max-width: 100%;
   border-radius: 10px;
 }
+
+img#shiny, img#sas, img#sql, img#excel {
+  height: 100px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+img#spss {
+  height: 65px;
+  border-radius: 10px;
+  margin-left: -10px;
+  margin-top: 5px;
+}
+
+img#sql {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+img#excel {
+  margin-top: 10px;
+}
+
+img#jazz {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+img#dj {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+img#able {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 65px;
+}
+
+img#studio {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 65px;
+}
+
+
 
 
 hr.star-light,
@@ -38,6 +113,8 @@ hr.star-dark {
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 hr.star-light:after,
 hr.star-dark:after {
@@ -83,6 +160,7 @@ section h2 {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+
 }
 
 .btn-xl {
@@ -148,6 +226,200 @@ section h2 {
   padding: 0.8rem;
 }
 
+@media only screen and (max-height: 568px) {
+ p.lead {
+      text-align: center;
+    }
+
+    img#r {
+      margin-right: 50px;
+    }
+
+  img#shiny {
+      margin-left: -2px;
+    }
+
+  img#sas {
+    margin-left: -20px;
+  }
+
+  img#spss {
+    margin-left: 30px;
+  }
+
+  img#sql {
+    margin-right: 30px;
+  }
+
+  img#excel {
+    margin-left: 75px;
+  }
+
+  
+
+
+}
+
+@media only screen and (max-height: 640px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+    img#sas {
+      margin-right: -20px;
+    }
+
+    img#excel {
+      margin-right: -20px;
+    }
+
+    h3.text-center {
+      margin-top: 20px;
+    }
+
+    img#resume {
+      height: auto;
+      max-width: 100%; 
+    }
+
+  }
+
+  @media only screen and (max-height: 667px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+    img#resume {
+      height: auto;
+      max-width: 100%; 
+    }
+
+    h3.text-center {
+      margin-top: 20px;
+    }
+
+    img#sas {
+      margin-left: -.5px;
+    }
+
+    img#shiny {
+      margin-right: 5px;
+    }
+
+    img#excel {
+      margin-left: -.5px;
+    }
+
+    img#sql {
+      margin-right: 5px;
+    }
+
+
+
+  }
+
+  @media only screen and (max-height: 732px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+    img#resume {
+      height: auto;
+      max-width: 100%; 
+    }
+
+    h3.text-center {
+      margin-top: 20px;
+    }
+
+
+
+
+
+
+  }
+
+  @media only screen and (max-height: 736px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+
+
+  }
+
+  @media only screen and (max-height: 739px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+  }
+
+  @media only screen and (max-height: 768px) {
+ p.lead {
+      text-align: center;
+
+}
+
+
+
+
+
+}
+
+
+
+  @media only screen and (max-height: 812px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+    img#sas {
+      margin-left: -.25px;
+    }
+
+    img#shiny {
+      margin-right: 5px;
+    }
+
+    img#excel {
+      margin-left: -.25px;
+    }
+
+    img#sql {
+      margin-right: 5px;
+    }
+
+  }
+
+  @media only screen and (max-height: 823px) {
+    p.lead {
+      text-align: center;
+
+    }
+
+     img#resume {
+      height: auto;
+      max-width: 100%; 
+    }
+
+    h3.text-center {
+      margin-top: 20px;
+    }
+
+    
+  }
+
+
+
+
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -178,6 +450,8 @@ section h2 {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+
+
 }
 
 header.masthead {
@@ -207,14 +481,16 @@ header.masthead h2 {
   header.masthead h2 {
     font-size: 1.75em;
   }
+
+
 }
 
  p#me {
-  font-size: 1.60rem;
+  font-size: 1.50rem;
 }
 
 p#music_desc {
-  font-size: 1.75rem;
+  font-size: 1.50rem;
 }
 
 .portfolio {
@@ -250,6 +526,7 @@ p#music_desc {
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
+
 }
 
 .portfolio-modal .portfolio-modal-dialog {
@@ -285,6 +562,10 @@ p#music_desc {
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 3rem;
   }
+
+
+
+
 }
 
 .footer {
@@ -345,3 +626,12 @@ a:focus, a:hover, a:active {
   background-color: #1a252f;
   border-color: #1a252f;
 }
+
+ul#skill {
+  text-align: center;
+  border-radius: 30px;
+  list-style: none;
+  margin-right: 35px;
+  font-size: 1rem;
+}
+
